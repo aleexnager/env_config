@@ -1,0 +1,65 @@
+GITHUB COMAND GUIDE 
+
+INSTALATION
+=====================
+$ sudo apt install git
+
+CONFIGURATION
+=====================
+$ git config --global user.name "[your-username github]"
+$ git config --global user.email "[your-email github]"
+$ git config --global core.autocrlf input
+$ git config --global core.safecrlf true
+$ git config --global init.defaultBranch main
+$ git config --global color.ui auto
+
+$ git config --list
+
+KEYS
+=====================
+$ ssh-keygen -o
+$ cd ~/.ssh
+$ cat id_rsa.pub
+$ ssh -T git@github.com
+
+CREATE REPO
+=====================
+$ git init [proyect-name]
+$ git clone [url]
+
+CHANGES
+=====================
+$ git status
+$ git diff
+$ git add [file]
+$ git commit -m "[descriptive message]"
+
+GROUP CHANGES
+====================
+$ git branch
+$ git branch [branch-name]
+$ git checkout [branch-name]
+$ git merge [branch]
+$ git branch -d [branch-name]
+
+FILE NAMES AND REFRAC
+====================
+$ git rm [file]
+$ git mv [file-original] [file-renamed]
+
+HISTORY
+====================
+$ git log
+$ git diff [first-branch]...[second-branch]
+$ git show [commit]
+
+RESET COMMITS
+===================
+$ git reset [commit]
+$ git reset --hard [commit]
+
+SYNC DATA
+===================
+$ git fetch [bookmark]
+$ git push [alias] [branch]
+$ git pull
