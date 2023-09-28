@@ -1,6 +1,6 @@
 PERSONAL SETTING
 
-install
+installations
 =====================================
 sudo apt install gcc
 sudo apt install git
@@ -9,6 +9,12 @@ sudo apt install git
 .bashrc
 =====================================
 # MY PERSONAL SCRIPTS
+mkcd() {
+  mkdir -p "${1}"
+  cd "${1}"
+}
+
+# PROMPT
 # username@G501VW: (green), actaul_dir (cyan) ? (non)
 #PS1='\e[1;32m\u@G501VW:\e[0m \e[1;36m\W\e[0m ? '
 
@@ -18,10 +24,12 @@ sudo apt install git
 # [path_to_dir] (cyan) ? (green)
 PS1='\e[0;36m[\w] \e[1;32m?\e[0m '
 
-mkcd() {
-  mkdir -p "${1}"
-  cd "${1}"
-}
+
+# NEOFETCH RANDOM IMAGES
+list=(cd ~/Pictures/terminal | ls -l | awk '{print $9}')
+n=(cd ~/Pictures/terminal | ls | wc -l)
+i=(RANDOM%n)
+Pictures/terminal/${list[i]}
 
 .bash_aliases
 =====================================
