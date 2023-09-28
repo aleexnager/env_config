@@ -14,6 +14,11 @@ mkcd() {
   cd "${1}"
 }
 
+# This may be already set in your .bashrc file, if so, dont add this func
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 # PROMPT
 # username@G501VW: (green), actaul_dir (cyan) ? (non)
 #PS1='\e[1;32m\u@G501VW:\e[0m \e[1;36m\W\e[0m ? '
