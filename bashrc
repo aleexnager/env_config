@@ -51,3 +51,4 @@ alias lla='ls -alF'
 alias update='sudo apt update && sudo apt upgrade'
 alias h='history'
 alias cdpic='cd /home/aleexnager/Pictures'
+alias rmdir = rm -r $1
