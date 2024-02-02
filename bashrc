@@ -51,4 +51,5 @@ alias lla='ls -alF'
 alias update='sudo apt update && sudo apt upgrade -y && sudo snap refresh && sudo apt autoremove && sudo apt autoclean'
 alias h='history'
 alias cdpic='cd /home/aleexnager/Pictures'
-alias rmdir = rm -r $1
+alias rmdir='rm -r $1'
+alias rmr='rm -r $1'
