@@ -48,7 +48,7 @@ alias l.='ls -d .* --color=auto'
 alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -alF'
-alias update='sudo apt update && sudo apt upgrade'
+alias update='sudo apt update && sudo apt upgrade -y && sudo snap refresh && sudo apt autoremove && sudo apt autoclean'
 alias h='history'
 alias cdpic='cd /home/aleexnager/Pictures'
 alias rmdir = rm -r $1
