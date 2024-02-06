@@ -20,6 +20,16 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # PROMPT
+update_prompt() {
+  if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" == "true" ]; then
+    PS1='\e[0;33m[\w] \e[1;32m?\e[0m '
+  else
+    PS1='\e[0;36m[\w] \e[1;32m?\e[0m '
+  fi
+}
+
+PROMPT_COMMAND=update_prompt
+
 # username@G501VW: (green), actaul_dir (cyan) ? (non)
 #PS1='\e[1;32m\u@G501VW:\e[0m \e[1;36m\W\e[0m ? '
 
