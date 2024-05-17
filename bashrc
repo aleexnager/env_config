@@ -63,3 +63,7 @@ alias h='history'
 alias cdpic='cd /home/aleexnager/Pictures'
 alias rmdir='rm -r $1'
 alias rmr='rm -r $1'
+alias ports='sudo lsof -i -P -n'
+alias closePort='fuser -k $1/tcp'
+alias ssh='ssh a.nager@triqui.fi.upm.es'
+
