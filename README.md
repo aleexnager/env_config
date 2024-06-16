@@ -13,7 +13,7 @@ Super easy configuration process, just download this repository on your local ma
 This is the fastest and easiest method. Once downloaded, locate the setup.sh configuration file and execute it with `./setup.sh`. Make sure it has the propper permissions. Remember you can give permissions with the 'chmod +` command.  
 Once executed, you are done and some messages will inform you of the process and changes made. 
 
->[IMPORTANT]
+>[!IMPORTANT]
 >Make sure setup.sh has the execute command. In case it doesn`t, use `chmod +x setup.sh` to grant the execute permission.
 
 ### 2. Copying .cfg files
