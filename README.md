@@ -15,7 +15,7 @@ This is the fastest and easiest method. Once downloaded, locate the setup.sh con
 Once executed, you are done and some messages will inform you of the process and changes made. 
 
 >[!IMPORTANT]
->Make sure setup.sh has the execute command. In case it doesn`t, use `chmod +x setup.sh` to grant the execute permission.
+>Make sure setup.sh has the execute command. In case it doesn\`t, use `chmod +x setup.sh` to grant the execute permission.
 
 ### 2. Copying .cfg files
 This is a rudimentary method. Just go in de **conf_files** directory and copy the content inside de .cfg files to your .bash_aliases and .bashrc files.
@@ -23,3 +23,5 @@ This is a rudimentary method. Just go in de **conf_files** directory and copy th
 >[!NOTE]
 >.bash_aliases may not exist so you will have to create it or add the `alias` commands inside the .bashrc file.
 
+>[!NOTE]\
+>Note: Some scripts may not work properly because some dependencies may need to be installed or some variables containing path directories may be different for you. My advise is to check every script you are going to use in case there is something that has to be modify for your personal usage.
