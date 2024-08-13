@@ -23,5 +23,5 @@ This is a rudimentary method. Just go in de **conf_files** directory and copy th
 >[!NOTE]
 >.bash_aliases may not exist so you will have to create it or add the `alias` commands inside the .bashrc file.
 
->[!NOTE]\
+>[!NOTE]
 >Note: Some scripts may not work properly because some dependencies may need to be installed or some variables containing path directories may be different for you. My advise is to check every script you are going to use in case there is something that has to be modify for your personal usage.
