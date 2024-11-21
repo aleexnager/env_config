@@ -19,7 +19,7 @@ else
   fi
 fi
 
-if [ ! -f "$BASHRC" ]
+if [ ! -f "$BASHRC" ]; then
   echo "ERROR: El archivo .bashrc no existe en el directorio HOME."
 else 
   if [ -f "$BASHRC_CONF" ]; then
